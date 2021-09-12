@@ -1,0 +1,34 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.example.springboot'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// Spring- 
+	// IOC (DI - Dependency Injection) {@Configuration, @Bean, @ComponentScan, @Component, @Service, @Repository} 
+	// Web(MVC - Model-View-Controller) {@RequestMapping, @RequestParam, @RequestAttribute, @PathVariable}
+	// REST(
+	//	Represent State Transfer {@RestController, @GetMapping, @PostMapping, @PutMapping, @PatchMapping, @DeleteMapping}, 
+	// 	Global Exception Handling {@ControllerAdvice, RestControllerAdvice, @ExceptionHandling}
+	// )
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// Auto reload context in development environment if any changes.
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	// Frontend fromework for build html page with dynamic data binding view.
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}

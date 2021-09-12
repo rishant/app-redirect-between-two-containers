@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>App1 Home Page</title>
+</head>
+<body>
+ <h1 align="center" th:text="${whereiam}">I am in server  </h1>
+ <a href="homePage/redirectApp">Got to app2 method homePageRedirectApp</a><br/>
+ <a href="homePage/typeRedirectApp">Got to app2 method homePageTypeRedirectApp</a><br/>
+ <a href="homePage/typeForwardApp">Got to app2 method homePageTypeForwardApp</a><br/>
+ <a href="homePage/typeForwardAppSameContainer">Got to app2 method typeForwardAppSameContainer</a><br/>
+</body>
+</html>
